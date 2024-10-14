@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator-box">
+        <div>
+            <input type="number" id="input-box1" value="" placeholder="0" dir="rtl">
+            <input type="number" id="input-box2" value="" placeholder="0" dir="rtl">
+            <input type="number" id="input-box3" value="" disabled placeholder="0" dir="rtl">
+        </div>
+        <div class="operation">
+            <div>
+                <button class="operand" onclick="activate_button('add-btn')" id="add-btn">+</button>
+                <button class="operand" onclick="activate_button('subtract-btn')" id="subtract-btn">-</button>
+                <button class="operand" onclick="activate_button('multiply-btn')" id="multiply-btn">*</button>
+                <button class="operand" onclick="activate_button('division-btn')" id="division-btn">/</button>
+            </div>
+            <div class="action-area">
+                <button onclick="clear_all_fields()" id="clear-btn">X</button>
+                <button onclick="claculate_result()" id="calculate-btn">=</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
