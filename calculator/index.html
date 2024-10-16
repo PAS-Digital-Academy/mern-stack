@@ -12,8 +12,10 @@
 
     <div class="calculator-box">
         <div>
-            <input type="number" id="input-box1" value="" placeholder="0" dir="rtl">
-            <input type="number" id="input-box2" value="" placeholder="0" dir="rtl">
+            <input class="input-box" type="number" onclick="set_active_input('input-box1')" id="input-box1" value=""
+                placeholder="0" dir="rtl">
+            <input class="input-box" type="number" onclick="set_active_input('input-box2')" id="input-box2" value=""
+                placeholder="0" dir="rtl">
             <input type="number" id="input-box3" value="" disabled placeholder="0" dir="rtl">
         </div>
         <div class="operation">
@@ -28,7 +30,37 @@
                 <button onclick="claculate_result()" id="calculate-btn">=</button>
             </div>
         </div>
+
+
+        <div class="button-area">
+            <button class="number-button" onclick="append_to_input_box('9')">9</button>
+            <button class="number-button" onclick="append_to_input_box('8')">8</button>
+            <button class="number-button" onclick="append_to_input_box('7')">7</button>
+        </div>
+
+
+
+        <div class="button-area">
+            <button class="number-button" onclick="append_to_input_box('6')">6</button>
+            <button class="number-button" onclick="append_to_input_box('5')">5</button>
+            <button class="number-button" onclick="append_to_input_box('4')">4</button>
+        </div>
+
+
+        <div class="button-area">
+            <button class="number-button" onclick="append_to_input_box('3')">3</button>
+            <button class="number-button" onclick="append_to_input_box('2')">2</button>
+            <button class="number-button" onclick="append_to_input_box('1')">1</button>
+        </div>
+
+        <div class="button-area">
+            <button class="number-button" onclick="append_to_input_box('0')">0</button>
+            <button class="number-button" disabled onclick="append_to_input_box('.')">.</button>
+            <button class="number-button" disabled onclick="append_to_input_box('%')">%</button>
+        </div>
     </div>
+
+
 
 
 
