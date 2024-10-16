@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <center>
+            <h1>Temperature Converter</h1>
+        </center>
+
+        <div class="input-field">
+            <input type="number" onchange="convert_from_celsius()" step="0.1" placeholder="Celsius" name="cel" id="cel">
+            &nbsp; &deg;&#67;
+        </div>
+        <div class="input-field">
+            <input type="number" onchange="convert_from_fahrenheit()" step="0.1" placeholder="Fahrenheit" name="fer"
+                id="fer">
+            &nbsp; &deg;F
+        </div>
+
+        <div class="input-field">
+            <input type="number" onchange="convert_from_kelvin()" step="0.1" placeholder="Kelvin" name="kel" id="kel">
+            &nbsp; &deg;K
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
