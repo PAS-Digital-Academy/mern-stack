@@ -19,7 +19,7 @@ function change_to_green() {
 
 function change_to_default() {
     body.style.backgroundColor = 'white'
-    green_button.style.visibility = 'show'
-    red_button.style.visibility = 'show'
+    green_button.style.visibility = 'visible'
+    red_button.style.visibility = 'visible'
     view_port.style.backgroundColor = "#797979"
 }
